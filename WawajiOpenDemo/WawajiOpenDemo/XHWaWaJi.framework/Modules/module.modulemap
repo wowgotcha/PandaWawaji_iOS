@@ -1,0 +1,6 @@
+framework module XHWaWaJi {
+  umbrella header "XHWaWaJi.h"
+
+  export *
+  module * { export * }
+}

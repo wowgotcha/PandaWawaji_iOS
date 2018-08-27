@@ -1,0 +1,553 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A609F74A212F9D5300FDB6ED /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A609F749212F9D5300FDB6ED /* AppDelegate.m */; };
+		A609F74D212F9D5300FDB6ED /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A609F74C212F9D5300FDB6ED /* ViewController.m */; };
+		A609F750212F9D5300FDB6ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A609F74E212F9D5300FDB6ED /* Main.storyboard */; };
+		A609F752212F9D5500FDB6ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A609F751212F9D5500FDB6ED /* Assets.xcassets */; };
+		A609F755212F9D5500FDB6ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A609F753212F9D5500FDB6ED /* LaunchScreen.storyboard */; };
+		A609F758212F9D5500FDB6ED /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A609F757212F9D5500FDB6ED /* main.m */; };
+		A609F762212FA89C00FDB6ED /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A609F761212FA89C00FDB6ED /* libc++.tbd */; };
+		A609F764212FA8AB00FDB6ED /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A609F763212FA8AB00FDB6ED /* libstdc++.tbd */; };
+		A609F766212FA8BB00FDB6ED /* libstdc++.6.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A609F765212FA8BB00FDB6ED /* libstdc++.6.tbd */; };
+		A609F768212FA8C300FDB6ED /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A609F767212FA8C200FDB6ED /* libz.tbd */; };
+		A609F76A212FA8CF00FDB6ED /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A609F769212FA8CF00FDB6ED /* libbz2.tbd */; };
+		A609F76C212FA8D800FDB6ED /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A609F76B212FA8D800FDB6ED /* libiconv.tbd */; };
+		A609F76E212FA8E000FDB6ED /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A609F76D212FA8E000FDB6ED /* libresolv.tbd */; };
+		A609F770212FA8F300FDB6ED /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A609F76F212FA8F300FDB6ED /* libsqlite3.tbd */; };
+		A609F772212FA90400FDB6ED /* libprotobuf.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A609F771212FA90300FDB6ED /* libprotobuf.tbd */; };
+		A609F774212FA90A00FDB6ED /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A609F773212FA90A00FDB6ED /* UIKit.framework */; };
+		A609F776212FA91300FDB6ED /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A609F775212FA91300FDB6ED /* CoreVideo.framework */; };
+		A609F778212FA92100FDB6ED /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A609F777212FA92100FDB6ED /* CoreMedia.framework */; };
+		A609F77A212FA92600FDB6ED /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A609F779212FA92600FDB6ED /* Accelerate.framework */; };
+		A609F77C212FA92B00FDB6ED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A609F77B212FA92B00FDB6ED /* Foundation.framework */; };
+		A609F77E212FA93000FDB6ED /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A609F77D212FA93000FDB6ED /* AVFoundation.framework */; };
+		A609F780212FA93500FDB6ED /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A609F77F212FA93500FDB6ED /* VideoToolbox.framework */; };
+		A609F782212FA93B00FDB6ED /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A609F781212FA93B00FDB6ED /* CoreGraphics.framework */; };
+		A609F784212FA94100FDB6ED /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A609F783212FA94100FDB6ED /* CoreTelephony.framework */; };
+		A609F786212FA94600FDB6ED /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A609F785212FA94600FDB6ED /* SystemConfiguration.framework */; };
+		A609F788212FA94B00FDB6ED /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A609F787212FA94B00FDB6ED /* OpenAL.framework */; };
+		A609F78A212FA95000FDB6ED /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A609F789212FA95000FDB6ED /* AssetsLibrary.framework */; };
+		A609F78C212FA95A00FDB6ED /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A609F78B212FA95900FDB6ED /* libicucore.tbd */; };
+		A609F79E212FA98600FDB6ED /* LoadSDK.sh in Resources */ = {isa = PBXBuildFile; fileRef = A609F78E212FA98600FDB6ED /* LoadSDK.sh */; };
+		A609F79F212FA98600FDB6ED /* ImSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A609F790212FA98600FDB6ED /* ImSDK.framework */; };
+		A609F7A0212FA98600FDB6ED /* TLSSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A609F791212FA98600FDB6ED /* TLSSDK.framework */; };
+		A609F7A1212FA98600FDB6ED /* IMCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A609F792212FA98600FDB6ED /* IMCore.framework */; };
+		A609F7A2212FA98600FDB6ED /* QALSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A609F793212FA98600FDB6ED /* QALSDK.framework */; };
+		A609F7A3212FA98600FDB6ED /* IMSDKBugly.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A609F794212FA98600FDB6ED /* IMSDKBugly.framework */; };
+		A609F7A4212FA98600FDB6ED /* QAVSDKInternal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A609F796212FA98600FDB6ED /* QAVSDKInternal.framework */; };
+		A609F7A5212FA98600FDB6ED /* QAVSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A609F797212FA98600FDB6ED /* QAVSDK.framework */; };
+		A609F7A6212FA98600FDB6ED /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = A609F798212FA98600FDB6ED /* .gitignore */; };
+		A609F7A7212FA98600FDB6ED /* TXLiteAVSDK_Smart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A609F799212FA98600FDB6ED /* TXLiteAVSDK_Smart.framework */; };
+		A609F7A8212FA98600FDB6ED /* ILiveSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A609F79B212FA98600FDB6ED /* ILiveSDK.framework */; };
+		A609F7A9212FA98600FDB6ED /* ILiveLogReport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A609F79C212FA98600FDB6ED /* ILiveLogReport.framework */; };
+		A609F7AA212FA98600FDB6ED /* TILLiveSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A609F79D212FA98600FDB6ED /* TILLiveSDK.framework */; };
+		A62A37942133D66E00402358 /* XHWaWaJi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A62A37932133D66E00402358 /* XHWaWaJi.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A609F745212F9D5300FDB6ED /* WawajiOpenDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WawajiOpenDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A609F748212F9D5300FDB6ED /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A609F749212F9D5300FDB6ED /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A609F74B212F9D5300FDB6ED /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A609F74C212F9D5300FDB6ED /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A609F74F212F9D5300FDB6ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A609F751212F9D5500FDB6ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A609F754212F9D5500FDB6ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A609F756212F9D5500FDB6ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A609F757212F9D5500FDB6ED /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A609F761212FA89C00FDB6ED /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		A609F763212FA8AB00FDB6ED /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
+		A609F765212FA8BB00FDB6ED /* libstdc++.6.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.tbd"; path = "usr/lib/libstdc++.6.tbd"; sourceTree = SDKROOT; };
+		A609F767212FA8C200FDB6ED /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		A609F769212FA8CF00FDB6ED /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
+		A609F76B212FA8D800FDB6ED /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		A609F76D212FA8E000FDB6ED /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
+		A609F76F212FA8F300FDB6ED /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		A609F771212FA90300FDB6ED /* libprotobuf.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libprotobuf.tbd; path = usr/lib/libprotobuf.tbd; sourceTree = SDKROOT; };
+		A609F773212FA90A00FDB6ED /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A609F775212FA91300FDB6ED /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		A609F777212FA92100FDB6ED /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		A609F779212FA92600FDB6ED /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		A609F77B212FA92B00FDB6ED /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A609F77D212FA93000FDB6ED /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		A609F77F212FA93500FDB6ED /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		A609F781212FA93B00FDB6ED /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A609F783212FA94100FDB6ED /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		A609F785212FA94600FDB6ED /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		A609F787212FA94B00FDB6ED /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
+		A609F789212FA95000FDB6ED /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		A609F78B212FA95900FDB6ED /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
+		A609F78E212FA98600FDB6ED /* LoadSDK.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = LoadSDK.sh; sourceTree = "<group>"; };
+		A609F790212FA98600FDB6ED /* ImSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ImSDK.framework; sourceTree = "<group>"; };
+		A609F791212FA98600FDB6ED /* TLSSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TLSSDK.framework; sourceTree = "<group>"; };
+		A609F792212FA98600FDB6ED /* IMCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IMCore.framework; sourceTree = "<group>"; };
+		A609F793212FA98600FDB6ED /* QALSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = QALSDK.framework; sourceTree = "<group>"; };
+		A609F794212FA98600FDB6ED /* IMSDKBugly.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IMSDKBugly.framework; sourceTree = "<group>"; };
+		A609F796212FA98600FDB6ED /* QAVSDKInternal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = QAVSDKInternal.framework; sourceTree = "<group>"; };
+		A609F797212FA98600FDB6ED /* QAVSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = QAVSDK.framework; sourceTree = "<group>"; };
+		A609F798212FA98600FDB6ED /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		A609F799212FA98600FDB6ED /* TXLiteAVSDK_Smart.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TXLiteAVSDK_Smart.framework; sourceTree = "<group>"; };
+		A609F79B212FA98600FDB6ED /* ILiveSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ILiveSDK.framework; sourceTree = "<group>"; };
+		A609F79C212FA98600FDB6ED /* ILiveLogReport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ILiveLogReport.framework; sourceTree = "<group>"; };
+		A609F79D212FA98600FDB6ED /* TILLiveSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TILLiveSDK.framework; sourceTree = "<group>"; };
+		A62A37932133D66E00402358 /* XHWaWaJi.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = XHWaWaJi.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A609F742212F9D5300FDB6ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A609F7A2212FA98600FDB6ED /* QALSDK.framework in Frameworks */,
+				A609F7AA212FA98600FDB6ED /* TILLiveSDK.framework in Frameworks */,
+				A609F76E212FA8E000FDB6ED /* libresolv.tbd in Frameworks */,
+				A609F78C212FA95A00FDB6ED /* libicucore.tbd in Frameworks */,
+				A609F78A212FA95000FDB6ED /* AssetsLibrary.framework in Frameworks */,
+				A609F788212FA94B00FDB6ED /* OpenAL.framework in Frameworks */,
+				A609F786212FA94600FDB6ED /* SystemConfiguration.framework in Frameworks */,
+				A609F7A5212FA98600FDB6ED /* QAVSDK.framework in Frameworks */,
+				A609F7A4212FA98600FDB6ED /* QAVSDKInternal.framework in Frameworks */,
+				A609F784212FA94100FDB6ED /* CoreTelephony.framework in Frameworks */,
+				A609F7A8212FA98600FDB6ED /* ILiveSDK.framework in Frameworks */,
+				A609F782212FA93B00FDB6ED /* CoreGraphics.framework in Frameworks */,
+				A609F780212FA93500FDB6ED /* VideoToolbox.framework in Frameworks */,
+				A609F7A9212FA98600FDB6ED /* ILiveLogReport.framework in Frameworks */,
+				A609F77E212FA93000FDB6ED /* AVFoundation.framework in Frameworks */,
+				A609F77C212FA92B00FDB6ED /* Foundation.framework in Frameworks */,
+				A609F77A212FA92600FDB6ED /* Accelerate.framework in Frameworks */,
+				A609F7A1212FA98600FDB6ED /* IMCore.framework in Frameworks */,
+				A609F79F212FA98600FDB6ED /* ImSDK.framework in Frameworks */,
+				A609F778212FA92100FDB6ED /* CoreMedia.framework in Frameworks */,
+				A609F776212FA91300FDB6ED /* CoreVideo.framework in Frameworks */,
+				A609F7A7212FA98600FDB6ED /* TXLiteAVSDK_Smart.framework in Frameworks */,
+				A609F774212FA90A00FDB6ED /* UIKit.framework in Frameworks */,
+				A62A37942133D66E00402358 /* XHWaWaJi.framework in Frameworks */,
+				A609F772212FA90400FDB6ED /* libprotobuf.tbd in Frameworks */,
+				A609F770212FA8F300FDB6ED /* libsqlite3.tbd in Frameworks */,
+				A609F7A3212FA98600FDB6ED /* IMSDKBugly.framework in Frameworks */,
+				A609F76C212FA8D800FDB6ED /* libiconv.tbd in Frameworks */,
+				A609F76A212FA8CF00FDB6ED /* libbz2.tbd in Frameworks */,
+				A609F768212FA8C300FDB6ED /* libz.tbd in Frameworks */,
+				A609F766212FA8BB00FDB6ED /* libstdc++.6.tbd in Frameworks */,
+				A609F764212FA8AB00FDB6ED /* libstdc++.tbd in Frameworks */,
+				A609F762212FA89C00FDB6ED /* libc++.tbd in Frameworks */,
+				A609F7A0212FA98600FDB6ED /* TLSSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A609F73C212F9D5300FDB6ED = {
+			isa = PBXGroup;
+			children = (
+				A609F747212F9D5300FDB6ED /* WawajiOpenDemo */,
+				A609F746212F9D5300FDB6ED /* Products */,
+				A609F760212FA89C00FDB6ED /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A609F746212F9D5300FDB6ED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A609F745212F9D5300FDB6ED /* WawajiOpenDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A609F747212F9D5300FDB6ED /* WawajiOpenDemo */ = {
+			isa = PBXGroup;
+			children = (
+				A62A37932133D66E00402358 /* XHWaWaJi.framework */,
+				A609F78D212FA98600FDB6ED /* Framework */,
+				A609F748212F9D5300FDB6ED /* AppDelegate.h */,
+				A609F749212F9D5300FDB6ED /* AppDelegate.m */,
+				A609F74B212F9D5300FDB6ED /* ViewController.h */,
+				A609F74C212F9D5300FDB6ED /* ViewController.m */,
+				A609F74E212F9D5300FDB6ED /* Main.storyboard */,
+				A609F751212F9D5500FDB6ED /* Assets.xcassets */,
+				A609F753212F9D5500FDB6ED /* LaunchScreen.storyboard */,
+				A609F756212F9D5500FDB6ED /* Info.plist */,
+				A609F757212F9D5500FDB6ED /* main.m */,
+			);
+			path = WawajiOpenDemo;
+			sourceTree = "<group>";
+		};
+		A609F760212FA89C00FDB6ED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A609F78B212FA95900FDB6ED /* libicucore.tbd */,
+				A609F789212FA95000FDB6ED /* AssetsLibrary.framework */,
+				A609F787212FA94B00FDB6ED /* OpenAL.framework */,
+				A609F785212FA94600FDB6ED /* SystemConfiguration.framework */,
+				A609F783212FA94100FDB6ED /* CoreTelephony.framework */,
+				A609F781212FA93B00FDB6ED /* CoreGraphics.framework */,
+				A609F77F212FA93500FDB6ED /* VideoToolbox.framework */,
+				A609F77D212FA93000FDB6ED /* AVFoundation.framework */,
+				A609F77B212FA92B00FDB6ED /* Foundation.framework */,
+				A609F779212FA92600FDB6ED /* Accelerate.framework */,
+				A609F777212FA92100FDB6ED /* CoreMedia.framework */,
+				A609F775212FA91300FDB6ED /* CoreVideo.framework */,
+				A609F773212FA90A00FDB6ED /* UIKit.framework */,
+				A609F771212FA90300FDB6ED /* libprotobuf.tbd */,
+				A609F76F212FA8F300FDB6ED /* libsqlite3.tbd */,
+				A609F76D212FA8E000FDB6ED /* libresolv.tbd */,
+				A609F76B212FA8D800FDB6ED /* libiconv.tbd */,
+				A609F769212FA8CF00FDB6ED /* libbz2.tbd */,
+				A609F767212FA8C200FDB6ED /* libz.tbd */,
+				A609F765212FA8BB00FDB6ED /* libstdc++.6.tbd */,
+				A609F763212FA8AB00FDB6ED /* libstdc++.tbd */,
+				A609F761212FA89C00FDB6ED /* libc++.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A609F78D212FA98600FDB6ED /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				A609F78E212FA98600FDB6ED /* LoadSDK.sh */,
+				A609F78F212FA98600FDB6ED /* IMSDK */,
+				A609F795212FA98600FDB6ED /* AVSDK */,
+				A609F798212FA98600FDB6ED /* .gitignore */,
+				A609F799212FA98600FDB6ED /* TXLiteAVSDK_Smart.framework */,
+				A609F79A212FA98600FDB6ED /* ILiveSDK */,
+			);
+			path = Framework;
+			sourceTree = "<group>";
+		};
+		A609F78F212FA98600FDB6ED /* IMSDK */ = {
+			isa = PBXGroup;
+			children = (
+				A609F790212FA98600FDB6ED /* ImSDK.framework */,
+				A609F791212FA98600FDB6ED /* TLSSDK.framework */,
+				A609F792212FA98600FDB6ED /* IMCore.framework */,
+				A609F793212FA98600FDB6ED /* QALSDK.framework */,
+				A609F794212FA98600FDB6ED /* IMSDKBugly.framework */,
+			);
+			path = IMSDK;
+			sourceTree = "<group>";
+		};
+		A609F795212FA98600FDB6ED /* AVSDK */ = {
+			isa = PBXGroup;
+			children = (
+				A609F796212FA98600FDB6ED /* QAVSDKInternal.framework */,
+				A609F797212FA98600FDB6ED /* QAVSDK.framework */,
+			);
+			path = AVSDK;
+			sourceTree = "<group>";
+		};
+		A609F79A212FA98600FDB6ED /* ILiveSDK */ = {
+			isa = PBXGroup;
+			children = (
+				A609F79B212FA98600FDB6ED /* ILiveSDK.framework */,
+				A609F79C212FA98600FDB6ED /* ILiveLogReport.framework */,
+				A609F79D212FA98600FDB6ED /* TILLiveSDK.framework */,
+			);
+			path = ILiveSDK;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A609F744212F9D5300FDB6ED /* WawajiOpenDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A609F75B212F9D5500FDB6ED /* Build configuration list for PBXNativeTarget "WawajiOpenDemo" */;
+			buildPhases = (
+				A609F741212F9D5300FDB6ED /* Sources */,
+				A609F742212F9D5300FDB6ED /* Frameworks */,
+				A609F743212F9D5300FDB6ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WawajiOpenDemo;
+			productName = WawajiOpenDemo;
+			productReference = A609F745212F9D5300FDB6ED /* WawajiOpenDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A609F73D212F9D5300FDB6ED /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = mikey;
+				TargetAttributes = {
+					A609F744212F9D5300FDB6ED = {
+						CreatedOnToolsVersion = 9.4.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = A609F740212F9D5300FDB6ED /* Build configuration list for PBXProject "WawajiOpenDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A609F73C212F9D5300FDB6ED;
+			productRefGroup = A609F746212F9D5300FDB6ED /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A609F744212F9D5300FDB6ED /* WawajiOpenDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A609F743212F9D5300FDB6ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A609F7A6212FA98600FDB6ED /* .gitignore in Resources */,
+				A609F755212F9D5500FDB6ED /* LaunchScreen.storyboard in Resources */,
+				A609F79E212FA98600FDB6ED /* LoadSDK.sh in Resources */,
+				A609F752212F9D5500FDB6ED /* Assets.xcassets in Resources */,
+				A609F750212F9D5300FDB6ED /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A609F741212F9D5300FDB6ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A609F74D212F9D5300FDB6ED /* ViewController.m in Sources */,
+				A609F758212F9D5500FDB6ED /* main.m in Sources */,
+				A609F74A212F9D5300FDB6ED /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A609F74E212F9D5300FDB6ED /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A609F74F212F9D5300FDB6ED /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A609F753212F9D5500FDB6ED /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A609F754212F9D5500FDB6ED /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A609F759212F9D5500FDB6ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A609F75A212F9D5500FDB6ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A609F75C212F9D5500FDB6ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FD79Z9S9BE;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WawajiOpenDemo",
+					"$(PROJECT_DIR)/WawajiOpenDemo/Framework/IMSDK",
+					"$(PROJECT_DIR)/WawajiOpenDemo/Framework/AVSDK",
+					"$(PROJECT_DIR)/WawajiOpenDemo/Framework",
+					"$(PROJECT_DIR)/WawajiOpenDemo/Framework/ILiveSDK",
+				);
+				INFOPLIST_FILE = WawajiOpenDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mikey.WawajiOpenDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A609F75D212F9D5500FDB6ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FD79Z9S9BE;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WawajiOpenDemo",
+					"$(PROJECT_DIR)/WawajiOpenDemo/Framework/IMSDK",
+					"$(PROJECT_DIR)/WawajiOpenDemo/Framework/AVSDK",
+					"$(PROJECT_DIR)/WawajiOpenDemo/Framework",
+					"$(PROJECT_DIR)/WawajiOpenDemo/Framework/ILiveSDK",
+				);
+				INFOPLIST_FILE = WawajiOpenDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mikey.WawajiOpenDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A609F740212F9D5300FDB6ED /* Build configuration list for PBXProject "WawajiOpenDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A609F759212F9D5500FDB6ED /* Debug */,
+				A609F75A212F9D5500FDB6ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A609F75B212F9D5500FDB6ED /* Build configuration list for PBXNativeTarget "WawajiOpenDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A609F75C212F9D5500FDB6ED /* Debug */,
+				A609F75D212F9D5500FDB6ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A609F73D212F9D5300FDB6ED /* Project object */;
+}
