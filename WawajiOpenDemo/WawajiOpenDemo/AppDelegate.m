@@ -32,8 +32,8 @@ const int TENCLOUDACCOUNTTYPE = <#TENCLOUDACCOUNTTYPE#>;
     [[XHLiveManager sharedManager] disableLogPrint];
     
     // 登录校验腾讯云互动直播用户，登录成功的用户才可以加入视频房间
-    NSString *UserId = @"wowgotcha_player_4g4gulxhg8";
-    NSString *UserSig = @"eJxlj9tOg0AQhu95CsJtjXLYLWDSC6REWyHGFBP0ZrOy22U5LFtYetD47lZsIolzN-m**WfmU9N13UjjzTXO83YQCqmTpIZ*qxumcfUHpeQEYYWcjvyD9Ch5RxHeKtqN0IIQ2qY5dTihQvEtvxiH9sBalRcYyRqfaIcAA2yojwXzJkM9qdC4*TcVnCN9359bU4WzESbRc7iKykikDyx5Kc5NSPo4a2bs47Gs34qbpJDRrIq9zJXL1bwJ*F0qgOu*73b7JlhXxH4i4v51KENXpXaC8-i0YWBNsiVMhmCxmKxUvKGXNx1oeQ6A05v3tOt5K0bBNi1o2Y75U4b2pX0D4x1lvQ__";
+    NSString *UserId = <#UserId#>;
+    NSString *UserSig = <#UserSig#>;
     [[XHLiveManager sharedManager] loginWithUserId:UserId sig:UserSig success:^{
         NSLog(@"互动直播用户登录成功");
     } failure:^(NSString *module, int errId, NSString *errMsg) {
