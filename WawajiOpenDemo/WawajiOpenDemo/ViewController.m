@@ -59,6 +59,7 @@
 
 #pragma mark ============== 视频部分 ==============
 - (void)joinLianmaiRoom{
+    __weak typeof(self) weakself = self;
     [[XHLivePlayer sharedManager] pausePlayers]; // 暂停旁路视频
     NSString *kRoomId = <#视频房间id#>; // 500xxx
     NSString *masterId = [NSString stringWithFormat:@"wowgotcha_%@_1",kRoomId];
@@ -66,12 +67,13 @@
     XHLiveCamera *camera = [XHLiveCamera liveCameraWithMasterId:masterId slaveId:slaveId];
     XHLiveManager *manager = [XHLiveManager sharedManager];
     [manager joinRoom:kRoomId liveCarema:camera rootView:self.lianmaiRootView playingFrame:self.lianmaiRootView.bounds success:^{
+        __strong typeof(self) strongself = weakself;
         NSLog(@"加入连麦房间成功");
         // 连麦视频已拉流成功
-        self.cameraIndex = [manager switchCamera:self.cameraIndex]; // 同步当前的摄像头方向
+        strongself.cameraIndex = [manager switchCamera:strongself.cameraIndex]; // 同步当前的摄像头方向
         
         // 由于加载连麦视频需要时间拉流和渲染，因此将view的hidden属性放在这里处理
-        [self showLianmaiView];
+        [strongself showLianmaiView];
         
         // ****** upToVideoMember方法，若需要做玩家视频采集的，需要调用此方法 ******
         /*
