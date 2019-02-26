@@ -128,6 +128,16 @@ typedef void (^XHFailure)(NSString *vgd, int errId, NSString *errMsg);
  */
 - (void)setSystemVolumeNormal;
 
+/**
+ * 设置视频来源
+ * QAVVIDEO_SRC_TYPE_CAMERA
+ * QAVVIDEO_SRC_TYPE_SCREEN
+ * @param mainSrcType
+ * @param sideSrcType
+ * @return
+ */
+- (void) setStreamSrcType:(avVideoSrcType)mainSrcType sideSrcType:(avVideoSrcType)sideSrcType;
+
 @end
 
 

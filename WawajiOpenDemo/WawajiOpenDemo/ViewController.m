@@ -41,31 +41,33 @@
     self.panluRootView.layer.borderColor = [[UIColor greenColor] CGColor];
     self.panluRootView.layer.borderWidth = 1;
     
-    liveUrl1 = <#正面旁路视频url#>;
-    liveUrl2 = <#侧面旁路视频url#>;
+    liveUrl1 = @"";
+    liveUrl2 = @"";
 
     // 摄像头方向默认为正面
     self.cameraIndex = @0; // @0 => 正面， @1侧面
 
     // 是否使用熊猫排队功能
-    self.isQueueEnable = <#排队功能#>;
+    self.isQueueEnable = false;
     
     // 进入房间，优先显示旁路视频
-    [self showPangluView];
+    //[self showPangluView];j
     // 加载旁路视频
-    [[XHLivePlayer sharedManager] addWawajiLive:@[liveUrl1, liveUrl2] rootView:self.panluRootView];
-    [[XHLivePlayer sharedManager] setLiveListener:self];
+    //[[XHLivePlayer sharedManager] addWawajiLive:@[liveUrl1, liveUrl2] rootView:self.panluRootView];
+    //[[XHLivePlayer sharedManager] setLiveListener:self];
 }
 
 #pragma mark ============== 视频部分 ==============
 - (void)joinLianmaiRoom{
     __weak typeof(self) weakself = self;
     [[XHLivePlayer sharedManager] pausePlayers]; // 暂停旁路视频
-    NSString *kRoomId = <#视频房间id#>; // 500xxx
+    NSString *kRoomId = @"500884"; // 500xxx
     NSString *masterId = [NSString stringWithFormat:@"wowgotcha_%@_1",kRoomId];
-    NSString *slaveId = [NSString stringWithFormat:@"wowgotcha_%@_2",kRoomId];
+    //NSString *slaveId = [NSString stringWithFormat:@"wowgotcha_%@_2",kRoomId];
+    NSString *slaveId = masterId;
     XHLiveCamera *camera = [XHLiveCamera liveCameraWithMasterId:masterId slaveId:slaveId];
     XHLiveManager *manager = [XHLiveManager sharedManager];
+    [manager setStreamSrcType:QAVVIDEO_SRC_TYPE_CAMERA sideSrcType:QAVVIDEO_SRC_TYPE_SCREEN];
     [manager joinRoom:kRoomId liveCarema:camera rootView:self.lianmaiRootView playingFrame:self.lianmaiRootView.bounds success:^{
         __strong typeof(self) strongself = weakself;
         NSLog(@"加入连麦房间成功");
@@ -77,7 +79,7 @@
         
         // ****** upToVideoMember方法，若需要做玩家视频采集的，需要调用此方法 ******
         /*
-        [manager upToVideoMemberSuccess:^{
+        [manager upToVideoMemberSuccess:^{rol
             NSLog(@"上麦成功");
         } failure:^(NSString *vgd, int errId, NSString *errMsg) {
             // 上麦失败，一般原因是腾讯云后台角色配置不对
@@ -85,7 +87,7 @@
         }];
         */
     } failure:^(NSString *module, int errId, NSString *errMsg) {
-        NSLog(@"加入失败");
+        NSLog([NSString stringWithFormat:@"加入失败 errId: %d, errMsg: %@", errId, errMsg]);
     }];
 }
 
@@ -137,9 +139,12 @@
 
 #pragma mark ============== 控制部分 ==============
 - (IBAction)connectWS:(id)sender {
+    [self switchToLianmai];
+    return;
+    
     [[XHPlayerManager sharedManager] setEnqueue:self.isQueueEnable]; // sdk默认使用排队功能，如不需要，则次方法必须调用并传入NO
     [[XHPlayerManager sharedManager] printWebsocketMsg]; // 调试时可以打开注释，此开关会打印Websocket通信消息体
-    NSString *wsUrl = @"ws://ws1.open.wowgotcha.com:9090/play/1331035bb59cb051e9137308a07f157a3674207d"; // ws地址只有几分钟过期时间，需替为当前使用的ws url
+    NSString *wsUrl = @"ws://ws1.open.wowgotcha.com:9090/play/5d901e1c0a68abb43a5d1a2c59cbafb4e935cd8c"; // ws地址只有几分钟过期时间，需替为当前使用的ws url
     [[XHPlayerManager sharedManager] setManagerListener:self];
     [[XHPlayerManager sharedManager] connectWithWebSocketURL:wsUrl success:^{
         NSLog(@"websocket连接成功");

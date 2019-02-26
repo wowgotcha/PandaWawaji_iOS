@@ -10,8 +10,8 @@
 
 #import <XHWaWaJi/XHWaWaJi.h>
 
-const int TENCLOUDAPPID = <#TENCLOUDAPPID#>;
-const int TENCLOUDACCOUNTTYPE = <#TENCLOUDACCOUNTTYPE#>;
+const int TENCLOUDAPPID = 0;
+const int TENCLOUDACCOUNTTYPE = 0;
 
 @interface AppDelegate ()
 
@@ -32,8 +32,8 @@ const int TENCLOUDACCOUNTTYPE = <#TENCLOUDACCOUNTTYPE#>;
     [[XHLiveManager sharedManager] disableLogPrint];
     
     // 登录校验腾讯云互动直播用户，登录成功的用户才可以加入视频房间
-    NSString *UserId = <#UserId#>;
-    NSString *UserSig = <#UserSig#>;
+    NSString *UserId = @"";
+    NSString *UserSig = @"";
     [[XHLiveManager sharedManager] loginWithUserId:UserId sig:UserSig success:^{
         NSLog(@"互动直播用户登录成功");
     } failure:^(NSString *module, int errId, NSString *errMsg) {
