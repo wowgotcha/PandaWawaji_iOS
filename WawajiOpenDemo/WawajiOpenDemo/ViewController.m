@@ -10,7 +10,7 @@
 
 #import <XHWaWaJi/XHWaWaJi.h>
 
-@interface ViewController ()<XHPlayerManagerDelegate,XHLivePlayerDelegate>
+@interface ViewController ()<XHPlayerManagerDelegate,XHLivePlayerDelegate, ILVLiveAVListener>
 @property (weak, nonatomic) IBOutlet UIView *lianmaiRootView;
 @property (weak, nonatomic) IBOutlet UIView *panluRootView;
 @property (weak, nonatomic) IBOutlet UIButton *queueBtn;
@@ -49,6 +49,8 @@
 
     // 是否使用熊猫排队功能
     self.isQueueEnable = false;
+    XHLiveManager *manager = [XHLiveManager sharedManager];
+    [manager setAVListener:self];
     
     // 进入房间，优先显示旁路视频
     //[self showPangluView];j
@@ -135,6 +137,20 @@
     if ([url isEqualToString:liveUrl2]) {
         NSLog(@"侧面视频已播放");
     }
+}
+
+#pragma mark ============== ILVLiveAVListener ==============
+
+- (void)onUserUpdateInfo:(ILVLiveAVEvent)event users:(NSArray *)users{
+    NSLog([NSString stringWithFormat:@"onUserUpdateInfo event: %ld, user: %@", event, users]);
+}
+
+- (void)onFirstFrameRecved:(int)width height:(int)height identifier:(NSString *)identifier srcType:(avVideoSrcType)srcType{
+    NSLog([NSString stringWithFormat:@"onFirstFrameRecved identifier: %@, srcType: %ld", identifier, srcType]);
+}
+
+- (void)onRoomDisconnect:(int)reason{
+    NSLog([NSString stringWithFormat:@"onRoomDisconnect reason: %d", reason]);
 }
 
 #pragma mark ============== 控制部分 ==============

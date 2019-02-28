@@ -132,11 +132,17 @@ typedef void (^XHFailure)(NSString *vgd, int errId, NSString *errMsg);
  * 设置视频来源
  * QAVVIDEO_SRC_TYPE_CAMERA
  * QAVVIDEO_SRC_TYPE_SCREEN
- * @param mainSrcType
- * @param sideSrcType
- * @return
+ * @param mainSrcType 正面摄像头视频源
+ * @param sideSrcType 侧面摄像头视频源
  */
 - (void) setStreamSrcType:(avVideoSrcType)mainSrcType sideSrcType:(avVideoSrcType)sideSrcType;
+
+
+/**
+ * 设置音视频事件监听
+ * @param  listener 监听对象
+ */
+- (void)setAVListener:(id<ILVLiveAVListener>)listener;
 
 @end
 
